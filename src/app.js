@@ -1,13 +1,13 @@
 'use strict';
 
+import deal from 'deal';
+
 export default class App {
   constructor(element) {
-    this.elements = {
-      main: element.querySelector('.app-main'),
-    };
+    this.main = element.querySelector('.app-main');
   }
 
   start() {
-
+    deal(this.main);
   }
 }
