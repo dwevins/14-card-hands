@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &-header {
+    padding: $gutter;
+  }
+
+  &__main {
+    flex-grow: 1;
+    padding: $gutter;
+    background: $black;
+    color: $white;
+  }
+
+  &__footer {
+    padding: $gutter;
+    background: $black;
+    color: $white;
+  }
+}
+
+.container {
+  max-width: $content-width;
+  margin: auto 0;
+}
+
+.app-header__title {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gutter;
+}
+
+.footer-content {
+  display: flex;
+
+  &__credits {
+    color: $white;
+  }
+}
