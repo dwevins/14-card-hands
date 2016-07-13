@@ -5,16 +5,16 @@
 
   &-header {
     padding: $gutter;
-  }
-
-  &__main {
-    flex-grow: 1;
-    padding: $gutter;
     background: $black;
     color: $white;
   }
 
-  &__footer {
+  &-main {
+    flex-grow: 1;
+    padding: $gutter;
+  }
+
+  &-footer {
     padding: $gutter;
     background: $black;
     color: $white;
@@ -23,7 +23,7 @@
 
 .container {
   max-width: $content-width;
-  margin: auto 0;
+  margin: 0 auto;
 }
 
 .app-header__title {
@@ -34,6 +34,11 @@
   display: flex;
   flex-wrap: wrap;
   margin: -$gutter;
+
+  &__hand {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .footer-content {
