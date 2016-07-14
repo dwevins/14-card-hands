@@ -1,4 +1,5 @@
 import Hand from 'hand';
+import getFetch from 'getFetch';
 
 export default function deal(element) {
   const container = document.createElement('div');
@@ -10,8 +11,7 @@ export default function deal(element) {
     row.className = 'row';
     container.appendChild(row);
 
-    fetch('https://card-proxy.herokuapp.com/decks/new')
-      .then((res) => res.json())
+    getFetch('https://card-proxy.herokuapp.com/decks/new')
       .then((deck) => {
         const hand = new Hand(row, deck.deck_id);
         hand.render();

@@ -35,10 +35,14 @@ export default class Hand {
     this.cards.forEach((card) => {
       const handCard = document.createElement('div');
       const cardImg = document.createElement('img');
+      const cardValue = document.createElement('p');
       handCard.className = 'row__hand--card';
       cardImg.className = 'card__img';
-      cardImg.setAttribute('src', `${card.images.png}`);
+      cardValue.className = 'card__value';
+      cardImg.setAttribute('src', `${card.image}`);
+      cardValue.innerText = `${card.value}`;
       handCard.appendChild(cardImg);
+      handCard.appendChild(cardValue);
       el.appendChild(handCard);
     });
   }
