@@ -21,7 +21,7 @@ export default class Hand {
   }
 
   populateHand(deck) {
-    for (let i = 0; i < deck.cards.length; i++) {
+    for (let i = 0; i < 5; i++) {
       this.cards.push(deck.cards[i]);
     }
 
