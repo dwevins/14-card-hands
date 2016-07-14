@@ -1,4 +1,3 @@
-import Card from 'card';
 import getFetch from 'getFetch';
 
 export default class Hand {
