@@ -34,7 +34,13 @@ export default class Hand {
 
   addCardsToPage(el) {
     this.cards.forEach((card) => {
-
-    })
+      const handCard = document.createElement('div');
+      const cardImg = document.createElement('img');
+      handCard.className = 'row__hand--card';
+      cardImg.className = 'card__img';
+      cardImg.setAttribute('src', `${card.images.png}`);
+      handCard.appendChild(cardImg);
+      el.appendChild(handCard);
+    });
   }
 }
