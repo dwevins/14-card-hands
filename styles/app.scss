@@ -3,4 +3,14 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+$gutter: 1rem;
+$content-width: 60rem;
+$min-card-width: 10rem;
+$black: #000;
+$white: #fff;
+
 @import 'box-sizing';
+@import 'resets';
+@import 'header';
+@import 'cards';
+@import 'footer';

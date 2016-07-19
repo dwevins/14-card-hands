@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>14-card-hands</title>
   <link rel="stylesheet" href="/app.css">
 </head>
-<body>
 
+<body>
+  <div class="app">
+    <nav class="app-header">
+      <div class="container">
+        <h2 class="app-header__title">Card Hands</h2>
+      </div>
+    </nav>
+
+    <main class="app-main">
+
+    </main>
+
+    <footer class="app-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-content__credits">coded by Woody Evins</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    const App = require('app');
+    const appElement = document.querySelector('.app');
+    const cardApp = new App(appElement);
+    cardApp.start();
   </script>
 </body>
+
 </html>
